@@ -39,6 +39,15 @@
             "show_gift_card_recipient": true
           }
         },
+        "collapsible_tab_ez4Xqj": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -58,6 +67,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "collapsible_tab_ez4Xqj",
         "description",
         "share"
       ],
