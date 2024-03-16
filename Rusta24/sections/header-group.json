@@ -2,34 +2,19 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ],
+    "custom_liquid_Fa4jEL": {
+      "type": "custom-liquid",
       "settings": {
-        "color_scheme": "scheme-1",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "custom_liquid": "<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/varuhus\/\">Varuhus & öppettider<\/a>\n<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/kundservice\/\">Kundservice<\/a>",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "top-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
@@ -43,10 +28,35 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "announcement_bar_wQPqbp": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_Qj668R": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_Qj668R"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "show_line_separator": true,
+        "show_social": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
-    "announcement-bar",
-    "header"
+    "custom_liquid_Fa4jEL",
+    "header",
+    "announcement_bar_wQPqbp"
   ]
 }

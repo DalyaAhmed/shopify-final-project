@@ -235,6 +235,7 @@
       {%- endif -%}
     {%- endif -%}
 
+{% comment %}
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -296,7 +297,7 @@
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"  header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -317,6 +318,8 @@
         {%- endcase -%}
       {%- endfor -%}
 
+
+      {% comment %}
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -335,7 +338,38 @@
           </div>
         {%- endif -%}
       </a>
+     {% endcomment %}
+
     </div>
+{% endcomment %}
+
+
+
+
+<div class="col-sm-2-5 col-xs-2-7 links main-right">
+    <span> 
+        <a href="/se/sv/favoriter/"> 
+            
+            <div id="bubbleCount-wishlist" class="js-wishlist-count bubble-count">1</div> 
+            <img src="resources/images/heart.png" alt="heart"> 
+            <span class="hidden-mobile">Favoriter</span> 
+        </a> 
+        <a href="javascript:void(0)" class="js-popup-loginbutton login-button hidden-mobile" title="Club Rusta"> 
+            <img src="resources/images/user.png" alt="user"> 
+            <span class="hidden-mobile">Club Rusta</span> 
+        </a> 
+        <a href="/se/sv/kassa/"> 
+            <div id="bubbleCount-checkout" class="js-checkout-count bubble-count">0</div> 
+            <img src="resources/images/shopping-cart.png" alt="shopping"> 
+            <span class="hidden-mobile">Kassa</span> 
+        </a> 
+    </span> 
+</div>
+
+
+
+
+
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
