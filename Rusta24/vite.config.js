@@ -1,22 +1,20 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import path from 'path';
 
-const ROOT = path.resolve('../../../')
-const BASE = __dirname.replace(ROOT, '');
+const ROOT = path.resolve('../../../');
 
 export default defineConfig(() => ({
-
-    base: '',
-    server:{
-        protocol : "ws",
-        host: "localhost",
-        port: 5173
+    base: '/',
+    server: {
+        protocol: 'ws',
+        host: 'localhost',
+        port: 5173,
     },
     build: {
         emptyOutDir: false,
         manifest: true,
         outDir: 'assets',
-        minify: false,
+        minify: true, // Enable minification
         rollupOptions: {
             input: [
                 'resources/js/app.js',
@@ -25,16 +23,16 @@ export default defineConfig(() => ({
             output: {
                 entryFileNames: `[name].js`,
                 chunkFileNames: `[name].js`,
-                assetFileNames: `[name].[ext]`
-            }
-        }
+                assetFileNames: `[name].[ext]`,
+            },
+        },
     },
     resolve: {
         alias: [
             {
                 find: /~(.+)/,
-                replacement: process.cwd() + '/node_modules/$1'
-            }
-        ]
-    }
-}))
+                replacement: path.join(process.cwd(), 'node_modules', '$1'),
+            },
+        ],
+    },
+}));
