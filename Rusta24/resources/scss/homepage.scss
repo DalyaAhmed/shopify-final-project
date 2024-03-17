@@ -1,7 +1,7 @@
 main{
 
     &#MainContent{
-        background-color: $secondary-color;
+        background-color:  #b8b8b8;
     }
 
     .banner{
@@ -11,7 +11,7 @@ main{
     }
     
     .banner__media{
-        width: $content-width;
+        width: calc(100% - 154px);
 
         img{
              display: block;
