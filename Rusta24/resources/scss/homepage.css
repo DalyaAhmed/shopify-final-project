@@ -1,1 +1,45 @@
-/*# sourceMappingURL=homepage.css.map */
+main#MainContent {
+  background-color: #f2f2f2;
+}
+main .banner {
+  width: 100%;
+}
+main .banner .page-width {
+  padding: unset;
+}
+main .banner__media {
+  width: 100%;
+  margin-left: -1px;
+}
+main .banner__media img {
+  display: block;
+  max-width: 100%;
+}
+main .shopify-section {
+  margin: 0 auto;
+  width: calc(100% - 150px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+main .shopify-section .banner__media {
+  height: 527px;
+}
+main .product-card-wrapper {
+  width: 235px;
+  padding: 0 3px;
+  display: block;
+  float: left;
+}
+main .product-card-wrapper .card__inner {
+  max-width: 91px;
+  margin: auto;
+}
+main .product-card-wrapper .card__inner img {
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+}
+main .media > img {
+  -o-object-fit: unset;
+     object-fit: unset;
+}/*# sourceMappingURL=homepage.css.map */
