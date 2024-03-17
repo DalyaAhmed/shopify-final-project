@@ -101,12 +101,33 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
+
+
+
+
+
+
                     <p class="announcement-bar__message h5">
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
                       {%- endif -%}
                     </p>
+
+
+
+<!-- Main menu -->
+<ul>
+{% for link in linklists.main-menu.links -%}
+  {{ link.title | link_to: link.url }}
+{%- endfor %}
+</ul>
+
+
+
+
+
+
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}

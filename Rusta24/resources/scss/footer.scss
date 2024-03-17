@@ -11,22 +11,22 @@
 // Footer styles
 .footer,
 #shopify-section-sections--17629503324396__footer {
-  background-color: $background-color;
+  background-color: #363636; // Set background color to #363636
   height: 330px; // Set desired height for the footer
 }
 
 .footer {
   @include custom-box;
   padding: 20px; // Reduce padding for a smaller footer height
-  color: $secondary-color;
+  color: #b8b8b8; // Text color
   width: 100%;
   margin: 0 auto;
   
   // Apply styles to links
   a {
-    color: $secondary-color;
+    color: #b8b8b8;
     &:hover {
-      color: darken($secondary-color, 20%);
+      color: #6c6c6c; // Darken color on hover
     }
   }
   
@@ -44,7 +44,7 @@
     color: #b8b8b8;
     
     .footer-block__heading {
-      color: #fff;
+      color: #fff; // Heading text color
       font-size: 18px;
       line-height: 110%;
     }
@@ -53,7 +53,7 @@
       li {
         margin-bottom: 3px; // Reduce margin between list items
         .link--text {
-          color: $secondary-color;
+          color: #b8b8b8;
         }
       }
     }
@@ -63,18 +63,16 @@
 .footer .footer-block .footer-block__details-content li {
   margin-bottom: -14px;
 }
-// Apply background color to footer with class .color-scheme-1
-.footer.color-scheme-1 {
-  background-color: $background-color;
-}
+
 .footer__content-top {
   padding-bottom: 5rem;
   display: block;
   margin-left: 90px;
 }
+
 // SCSS for .copyright-area
 .copyright-area {
-  background-color: #ffd100;
+  background-color: #ffd100; // Set background color to #ffd100
 
   .editorial-text {
     display: flex;
@@ -103,7 +101,7 @@
 
 // Apply specific background color to text container
 .editorialblock .text-container {
-  background-color: #fff;
+  background-color: #fff; // Set background color to #fff
 }
 
 // Adjust grid layout
