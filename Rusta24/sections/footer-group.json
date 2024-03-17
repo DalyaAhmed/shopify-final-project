@@ -15,15 +15,15 @@
         "link_list_tciAGN": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Information",
+            "menu": "information"
           }
         },
         "link_list_zNHPg3": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Genvägar",
+            "menu": "genv-gar"
           }
         }
       },
