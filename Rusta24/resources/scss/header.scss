@@ -16,7 +16,7 @@
 sticky-header {
    
     &.header-wrapper{
-    background-color: #ffd100;
+    background-color:#ffd100;
     }
 
   .header{
@@ -62,7 +62,7 @@ sticky-header {
         a{
             text-decoration: none;
             width: 30%;
-            color: black;
+            color:  #363636 !important;
         }
 
         a:nth-of-type(2) {
@@ -73,3 +73,31 @@ sticky-header {
 }
 }
 
+//menu
+
+
+
+.navigation {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color:  #363636!important;
+
+        &:hover {
+        font-weight: bold; 
+          text-decoration: none; 
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.color-scheme-1 {
+.color-scheme-1 .section-sections--17629503455468__custom_liquid_Fa4jEL-padding {
   background-color: rgb(11, 4, 4);
 }
 .color-scheme-1 .section-sections--17629503455468__custom_liquid_Fa4jEL-padding a {
@@ -42,8 +42,29 @@ sticky-header .main-right span {
 sticky-header .main-right span a {
   text-decoration: none;
   width: 30%;
-  color: black;
+  color: #363636 !important;
 }
 sticky-header .main-right span a:nth-of-type(2) {
   margin-top: 31px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #363636 !important;
+}
+.navigation ul li a:hover {
+  font-weight: bold;
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

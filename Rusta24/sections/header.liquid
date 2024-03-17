@@ -200,6 +200,7 @@
       {%- endif -%}
     {%- endif -%}
 
+{% comment %}
     {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
@@ -239,7 +240,7 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-
+{% endcomment%}
 {% comment %}
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
@@ -350,7 +351,7 @@
 
 
 
-
+{%comment%}
 <div class="col-sm-2-5 col-xs-2-7 links main-right">
     <span> 
         <a href="/se/sv/favoriter/"> 
@@ -370,6 +371,23 @@
         </a> 
     </span> 
 </div>
+{%endcomment%}
+
+
+
+
+<div class="navigation">
+  <ul>
+    {% for link in linklists.icons-menu.links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+
+
+
 
 
 
@@ -726,8 +744,12 @@
   ]
 }
 {% endschema %}
-<ul>
-{% for link in linklists.main-menu.links -%}
-  {{ link.title | link_to: link.url }}
-{%- endfor %}
-</ul>
+
+
+<div class="navigation">
+  <ul>
+    {% for link in linklists.main-menu.links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+    {% endfor %}
+  </ul>
+</div>
