@@ -1,0 +1,40 @@
+main{
+
+    &#MainContent{
+        background-color: $secondary-color;
+    }
+
+    .banner{
+        .page-width{
+             padding: unset;
+        }
+    }
+    
+    .banner__media{
+        width: $content-width;
+
+        img{
+             display: block;
+             max-width: 100%;
+        }
+    }
+
+.product-card-wrapper{
+    width: 235px;
+    padding: 0 3px;
+    display: block;
+    float: left;
+
+    .card__inner{
+        max-width: 91px;
+        margin: auto;
+        img{
+            max-width: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+}
+
+
+}

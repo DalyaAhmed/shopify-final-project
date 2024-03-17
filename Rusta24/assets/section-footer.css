@@ -121,20 +121,8 @@
   }
 }
 
-.footer-block:empty {
-  display: none;
-}
 
-.footer-block--newsletter {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 3rem;
-  gap: 1rem;
-}
 
-.footer-block--newsletter:only-child {
-  margin-top: 0;
-}
 
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {
