@@ -11,7 +11,7 @@ main{
     }
     
     .banner__media{
-        width: $content-width;
+        width: calc(100% - 154px);
 
         img{
              display: block;
