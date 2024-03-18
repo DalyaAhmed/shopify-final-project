@@ -29,19 +29,34 @@
         "padding_bottom": 20
       }
     },
-    "custom_liquid_6myfQg": {
-      "type": "custom-liquid",
+    "announcement_bar_wQPqbp": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_Qj668R": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_Qj668R"
+      ],
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 28,
-        "padding_bottom": 28
+        "color_scheme": "scheme-2",
+        "show_line_separator": true,
+        "show_social": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
       }
     }
   },
   "order": [
     "custom_liquid_Fa4jEL",
     "header",
-    "custom_liquid_6myfQg"
+    "announcement_bar_wQPqbp"
   ]
 }

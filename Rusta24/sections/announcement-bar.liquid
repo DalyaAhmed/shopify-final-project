@@ -116,6 +116,13 @@
 
 
 
+<!-- Main menu -->
+<ul>
+{% for link in linklists.main-menu.links -%}
+  {{ link.title | link_to: link.url }}
+{%- endfor %}
+</ul>
+
 
 
 
