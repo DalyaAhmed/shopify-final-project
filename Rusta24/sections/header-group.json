@@ -28,10 +28,20 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_liquid_6myfQg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
     "custom_liquid_Fa4jEL",
-    "header"
+    "header",
+    "custom_liquid_6myfQg"
   ]
 }
