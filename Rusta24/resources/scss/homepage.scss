@@ -1,59 +1,55 @@
-main{
-
-    &#MainContent{
-        background-color:  #f2f2f2;
-      
-        
+main {
+    #MainContent {
+        background-color: #f2f2f2; /* Change to match the background color of other sections */
     }
 
-    .banner{
+    .banner {
         width: 100%;
-        .page-width{
-             padding: unset;
+        .page-width {
+            padding: unset;
         }
     }
-    
-    .banner__media{
+
+    .banner__media {
         width: 100%;
         margin-left: -1px;
 
-        img{
-             display: block;
-             max-width: 100%;
+        img {
+            display: block;
+            max-width: 100%;
         }
     }
-.shopify-section{
-   
-        margin: 0 auto; 
-        width: calc(100% - 150px); 
-        padding: 20px; 
-        background-color: rgba(255, 255, 255, 0.8); 
 
-        .banner__media{
+    .shopify-section {
+        margin: 0 auto;
+        width: calc(100% - 150px);
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        .banner__media {
             height: 527px;
         }
+    }
 
-}
-.product-card-wrapper{
-    width: 235px;
-    padding: 0 3px;
-    display: block;
-    float: left;
+    .product-card-wrapper {
+        width: 235px;
+        padding: 0 3px;
+        display: block;
+        float: left;
 
-    .card__inner{
-        max-width: 91px;
-        margin: auto;
-        img{
-            max-width: 100%;
-            width: 100%;
-            position: absolute;
+        .card__inner {
+            max-width: 91px;
+            margin: auto;
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                position: absolute;
+            }
         }
     }
-}
 
-.media>img {
-    object-fit: unset; 
-   
-}
-
+    .media > img {
+        object-fit: unset;
+    }
 }
