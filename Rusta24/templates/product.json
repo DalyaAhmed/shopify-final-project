@@ -23,7 +23,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
@@ -39,24 +39,9 @@
             "show_gift_card_recipient": true
           }
         },
-        "collapsible_tab_ez4Xqj": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
@@ -67,9 +52,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "collapsible_tab_ez4Xqj",
-        "description",
-        "share"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
