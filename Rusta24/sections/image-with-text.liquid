@@ -1,17 +1,69 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+     .section-{{ section.id }}-padding {
+       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+     }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
+     @media screen and (min-width: 750px) {
+       .section-{{ section.id }}-padding {
+         padding-top: {{ section.settings.padding_top }}px;
+         padding-bottom: {{ section.settings.padding_bottom }}px;
+       }
+     }
+
+     .image-with-text__grid {
+       display: flex;
+       flex-direction: row-reverse; /* Reversing the direction to place the image on the right */
+       align-items: center; /* Align items vertically */
+       justify-content: space-between; /* Align items horizontally */
+     }
+
+     .image-with-text__media-item,
+     .image-with-text__text-item {
+       width: calc(50% - 20px); /* Each takes half of the container width minus padding */
+       box-sizing: border-box;
+     }
+
+     .image-with-text__media {
+       max-width: 100%;
+     }
+
+     .image-with-text__media img {
+       width: 100%;
+       height: auto;
+       display: block;
+     }
+
+     .image-with-text__text-item {
+       padding: 20px; /* Adjust padding as needed */
+     }
+
+     .image-with-text__content {
+       max-width: 100%;
+     }
+    .image-with-text__text h4 {
+       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+       font-size: 22px; /* Adjust font size as needed */
+       line-height: 1.3; /* Adjust line height as needed */
+
+      margin-bottom:12px;
+
+   }
+  .image-with-text__text h1{
+       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+      letter-spacing: -.025em;
+   font-size: 30px;
+
+   font-weight: bold;
+    margin-bottom:-21px;
+   }
+     .image-with-text__text {
+       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+       font-size: 14px; /* Adjust font size as needed */
+       line-height: 1.3; /* Adjust line height as needed */
+       color:black;
+   }
 {%- endstyle -%}
 
 {%- liquid

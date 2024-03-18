@@ -105,6 +105,14 @@
                     </h2>
                   </a>
                 </div>
+
+
+
+                {{product.type}}
+
+
+
+                
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -119,6 +127,9 @@
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
+
+
+                
 
                 {% comment %}
                 <div class="product__tax caption rte">
