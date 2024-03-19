@@ -209,6 +209,7 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
+                <h1>Description</h1>
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
@@ -275,12 +276,7 @@
 
                   <div class="price-per-item__container">
                     <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
-                      <button class="quantity__button no-js-hidden" name="minus" type="button">
-                        <span class="visually-hidden">
-                          {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                        </span>
-                        {% render 'icon-minus' %}
-                      </button>
+                     
                       <input
                         class="quantity__input"
                         type="number"
@@ -2337,9 +2333,3 @@
   ]
 }
 {% endschema %}
-  {%- when 'description' -%}
-                {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
-                  </div>
-                {%- endif -%}

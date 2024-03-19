@@ -43,6 +43,13 @@
           "type": "description",
           "settings": {
           }
+        },
+        "text_dV38xh": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"https:\/\/www.rusta.com\/se\/sv\/glasracke-p621011620601.aspx#specTab\">Specifikationer<\/a>",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -52,7 +59,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "text_dV38xh"
       ],
       "settings": {
         "enable_sticky_info": true,
