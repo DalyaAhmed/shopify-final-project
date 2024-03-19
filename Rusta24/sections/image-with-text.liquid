@@ -1,81 +1,78 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 {%- style -%}
-     .section-{{ section.id }}-padding {
-       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-     }
-
-     @media screen and (min-width: 750px) {
        .section-{{ section.id }}-padding {
-         padding-top: {{ section.settings.padding_top }}px;
-         padding-bottom: {{ section.settings.padding_bottom }}px;
+         padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+         padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
        }
+
+       @media screen and (min-width: 750px) {
+         .section-{{ section.id }}-padding {
+           padding-top: {{ section.settings.padding_top }}px;
+           padding-bottom: {{ section.settings.padding_bottom }}px;
+         }
+       }
+
+       .image-with-text__grid {
+         display: flex;
+         flex-direction: row-reverse; /* Reversing the direction to place the image on the right */
+         align-items: center; /* Align items vertically */
+         justify-content: space-between; /* Align items horizontally */
+          background-color: white;
+       }
+
+       .image-with-text__media-item,
+       .image-with-text__text-item {
+         width: calc(50% - 20px); /* Each takes half of the container width minus padding */
+         box-sizing: border-box;
+       }
+
+       .image-with-text__media {
+         max-width: 100%;
+       }
+
+       .image-with-text__media img {
+         width: 100%;
+         height: auto;
+         display: block;
+       }
+
+       .image-with-text__text-item {
+         padding: 20px; /* Adjust padding as needed */
+       }
+
+       .image-with-text__content {
+         max-width: 100%;
+       }
+      .image-with-text__text h4 {
+         font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+         font-size: 22px; /* Adjust font size as needed */
+         line-height: 1.3; /* Adjust line height as needed */
+
+        margin-bottom:12px;
+
+     }
+    .image-with-text__text h1{
+         font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+        letter-spacing: -.025em;
+     font-size: 30px;
+
+     font-weight: bold;
+      margin-bottom:-21px;
+     }
+       .image-with-text__text {
+         font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
+         font-size: 14px; /* Adjust font size as needed */
+         line-height: 1.3; /* Adjust line height as needed */
+         color:black;
      }
 
-  .page-width{
-   background-color: white;
-  }
-  .navigation { /* Targeting the navigation container */
+    .navigations {
     font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
     font-size: 14px; /* Adjust font size as needed */
     line-height: 1.3; /* Adjust line height as needed */
     color: black;
-    margin-top:10px;
+      margin-top:40px;
   }
-
-     .image-with-text__grid {
-       display: flex;
-       flex-direction: row-reverse; /* Reversing the direction to place the image on the right */
-       align-items: center; /* Align items vertically */
-       justify-content: space-between; /* Align items horizontally */
-        background-color: white;
-     }
-
-     .image-with-text__media-item,
-     .image-with-text__text-item {
-       width: calc(50% - 20px); /* Each takes half of the container width minus padding */
-       box-sizing: border-box;
-     }
-
-     .image-with-text__media {
-       max-width: 100%;
-     }
-
-     .image-with-text__media img {
-       width: 100%;
-       height: auto;
-       display: block;
-     }
-
-     .image-with-text__text-item {
-       padding: 20px; /* Adjust padding as needed */
-     }
-
-     .image-with-text__content {
-       max-width: 100%;
-     }
-    .image-with-text__text h4 {
-       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
-       font-size: 22px; /* Adjust font size as needed */
-       line-height: 1.3; /* Adjust line height as needed */
-
-      margin-bottom:12px;
-
-   }
-  .image-with-text__text h1{
-       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
-      letter-spacing: -.025em;
-   font-size: 35px;
-
-   font-weight: bold;
-    margin-bottom:-21px;
-   }
-     .image-with-text__text {
-       font-family: 'Poppins', 'FFDINWebProBold', 'Arial', 'Helvetica', 'Sans-Serif';
-       font-size: 14px; /* Adjust font size as needed */
-       line-height: 1.3; /* Adjust line height as needed */
-       color:black;
-   }
 {%- endstyle -%}
 
 {%- liquid
@@ -89,20 +86,20 @@
 -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+  <div class="navigations">
+    <ul>
+      {% assign hem_menu = linklists['hem-inredning'].links %}
+      {% if hem_menu.size > 0 %}
+        {% for link in hem_menu %}
+          <li>{{ link.title | link_to: link.url }}</li>
+        {% endfor %}
+      {% else %}
+        <li>No links found in the "Hem inredning" link list.</li>
+      {% endif %}
+    </ul>
+  </div>
+
   <div class="page-width">
-    <div class="navigation">
-      <!-- Unique class for the navigation -->
-      <ul>
-        {% assign hem_menu = linklists['hem-inredning'].links %}
-        {% if hem_menu.size > 0 %}
-          {% for link in hem_menu %}
-            <li>{{ link.title | link_to: link.url }}</li>
-          {% endfor %}
-        {% else %}
-          <li>No links found in the "Hem inredning" link list.</li>
-        {% endif %}
-      </ul>
-    </div>
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
         <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">

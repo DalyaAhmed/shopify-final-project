@@ -209,8 +209,10 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                <h1>Description</h1>
+                
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+
+                    <h1>Description</h1>
                     {{ product.description }}
                   </div>
                 {%- endif -%}
