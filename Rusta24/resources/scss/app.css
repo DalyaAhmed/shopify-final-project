@@ -247,7 +247,6 @@ main .product-card-wrapper {
 }
 .shopify-section.section .product-card-wrapper .card__inner,
 main .product-card-wrapper .card__inner {
-  max-width: 100%;
   margin: auto;
   position: relative;
 }
@@ -295,7 +294,6 @@ main .list-item > a .data .text .title {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   font-size: 120%;
 }
@@ -305,7 +303,6 @@ main .list-item > a .data .text .description {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #848484;
   font-size: 110%;
@@ -331,6 +328,10 @@ main .list-item > a .data .price-data .price {
 .shopify-section.section .list-item > a .data .price-data .price .cents,
 main .list-item > a .data .price-data .price .cents {
   bottom: 16px;
+}
+
+.card__media .card__media {
+  height: 300px;
 }
 
 body {

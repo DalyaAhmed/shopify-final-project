@@ -75,8 +75,6 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-
-          {% comment %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -95,8 +93,6 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-
-          {% endcomment %}
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
@@ -106,7 +102,6 @@
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
-      {% comment %}
         <button
           type="submit"
           name="add"
@@ -115,9 +110,6 @@
         >
           {{ 'products.product.sold_out' | t }}
         </button>
-        {% endcomment %}
-
-        {% endcomment%}
       </div>
     </div>
   {%- endif -%}

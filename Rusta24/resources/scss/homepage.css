@@ -1,5 +1,12 @@
-main#MainContent {
+main #MainContent {
   background-color: #f2f2f2;
+}
+main .gradient .collection-list-wrapper .card__inner {
+  height: 325px;
+  margin-top: -15px;
+}
+main .gradient .collection-list-wrapper .card__content {
+  display: none;
 }
 main .banner {
   width: 100%;

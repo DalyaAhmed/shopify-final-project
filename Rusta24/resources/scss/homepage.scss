@@ -1,8 +1,31 @@
 main {
     #MainContent {
-        background-color: #f2f2f2; /* Change to match the background color of other sections */
+        background-color: #f2f2f2;
     }
+    .gradient{
+        // margin-top: -80px;
+            .collection-list-wrapper{
+        
+               // height: 326px;
+    //             ul.collection-list{
+    //                 li.collection-list__item{
+    //                     .card-wrapper{
+        
+                            .card__inner{
 
+                                height: 325px; 
+                                margin-top: -15px;  
+                            }
+        
+                            .card__content{
+                                display: none;
+                            }
+    //                     }
+    //                 }
+    //             }
+            }
+         }
+        
     .banner {
         width: 100%;
         .page-width {

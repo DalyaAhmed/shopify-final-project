@@ -106,9 +106,9 @@
                   </a>
                 </div>
 
+          <div class= "product-type"> {{product.type}}</div>
 
-
-                {{product.type}}
+               
 
 
 
@@ -255,6 +255,9 @@
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
                   {% # theme-check-enable %}
+
+
+                  {% comment %}
                   <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                     {{ 'products.product.quantity.label' | t }}
                     <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
@@ -266,6 +269,10 @@
                       >
                     </span>
                   </label>
+                  {% endcomment %}
+
+
+
                   <div class="price-per-item__container">
                     <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                       <button class="quantity__button no-js-hidden" name="minus" type="button">
@@ -2330,3 +2337,9 @@
   ]
 }
 {% endschema %}
+  {%- when 'description' -%}
+                {%- if product.description != blank -%}
+                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                    {{ product.description }}
+                  </div>
+                {%- endif -%}
