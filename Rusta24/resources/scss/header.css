@@ -1,7 +1,8 @@
 .header__heading-logo {
   height: auto;
   width: 100%;
-  width: 237px;
+  width: 233px;
+  margin: 0 auto;
 }
 
 .section-sections--17629503455468__custom_liquid_Fa4jEL-padding {
@@ -16,14 +17,19 @@
 
 sticky-header.header-wrapper {
   background-color: #ffd100;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 sticky-header .header .qs-form .search-input-wrapper #qs-content {
-  width: 245px;
+  width: 385px;
   height: 50px;
   border-radius: 40px;
   font-size: solid 15px black;
   padding: 18px;
-  margin-left: -29px;
+  margin-left: -238px;
+  margin-top: 8px;
+  border: solid 1px;
 }
 sticky-header .header .header__search {
   line-height: 1.5;
@@ -34,6 +40,8 @@ sticky-header .header .header__search {
   display: block;
   width: 100%;
   padding: 10px 20px 10px 50px;
+  flex: 1;
+  order: -1;
 }
 sticky-header .header .header__icons form {
   display: none;
@@ -47,11 +55,31 @@ sticky-header .main-right span {
 }
 sticky-header .main-right span a {
   text-decoration: none;
-  width: 30%;
+  width: 70%;
   color: #363636 !important;
 }
 sticky-header .main-right span a:nth-of-type(2) {
   margin-top: 31px;
+}
+sticky-header .main-right #bubbleCount-checkout, sticky-header .main-right #bubbleCount-wishlist {
+  background-color: white;
+  border-radius: 50%; /* This creates the circle */
+  width: 24px; /* Adjust the width and height to fit the number */
+  height: 24px;
+  line-height: 24px; /* This centers the number vertically */
+  text-align: center; /* This centers the number horizontally */
+  color: black; /* Adjust the color of the number */
+  margin-left: 27px;
+}
+
+.links.main-right {
+  /* Assuming .bubble-count has a fixed height */
+}
+.links.main-right .fa-heart,
+.links.main-right .fa-shopping-cart {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .navigation {
