@@ -61,24 +61,86 @@
             border: none; // Remove border around the select element
           
             .select {
-              border-top: 1px solid #f2f2f2; // Add a line above the select element
+              border-top: 1px solid #f2f2f2; 
+              label{
+                font-weight: 700;
+                font-size: 16px;
+                padding: 13px;
+              }
+              .select__select,.icon{
+
+                font-size: 16px;
+                
+              }
+
+              .icon{
+                font-weight: 300px;
+              }
             }
           }
           
 
     }
+
+    .accordion{
+        margin-top: 44px;
+    margin-bottom: -4px;
+    border-top: 0.1rem solid rgba(var(--color-foreground), .08);
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), .08);
+    margin-left: -727px;
+    width: 185px;
+
+    }
+
+    .price-per-item__container{
+        width: 111px;
+        .quantity__button{
+            margin-top: -74px;
+            width: 46px;
+            svg{
+                margin-top: 76px;
+            }
+        
+        }
+    }
+    
 }
 
 
 .page-width{
+   
     .product{
         ul {
             li{
-                .product-media-container{
-                    width: 90% ;
-                    margin-left: 26px;
-                }
+                .product-media-container {
+                    width: 40%;
+                    // Set width for all product-media-container elements
+                  
+                    &:first-child {
+                      width: auto;
+                      // Override width for the first child
+                    }
+                  }
             }
         }
+
+        
+        .product__description{
+            margin-bottom: -262px;
+            margin-left: -730px;
+        }
+    }
+
+    .grid__item.product__media-wrapper{
+        padding-bottom: 113px;
+    }
+
+
+    .shopify-payment-button__button{
+        width: 62px;
+        float: right;
+        margin-top: -75px;
+        margin-right: -10px;
+        border-radius: 9px;
     }
 }

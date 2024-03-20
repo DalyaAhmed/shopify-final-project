@@ -27,6 +27,7 @@ main .product-card-wrapper {
 }
 .shopify-section.section .product-card-wrapper .card__inner,
 main .product-card-wrapper .card__inner {
+  max-width: 100%;
   margin: auto;
   position: relative;
 }

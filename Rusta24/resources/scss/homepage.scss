@@ -3,15 +3,10 @@ main {
         background-color: #f2f2f2;
     }
     .gradient{
-        // margin-top: -80px;
+      
             .collection-list-wrapper{
         
-               // height: 326px;
-    //             ul.collection-list{
-    //                 li.collection-list__item{
-    //                     .card-wrapper{
-        
-                            .card__inner{
+                .card__inner{
 
                                 height: 325px; 
                                 margin-top: -15px;  
@@ -20,9 +15,6 @@ main {
                             .card__content{
                                 display: none;
                             }
-    //                     }
-    //                 }
-    //             }
             }
          }
         
@@ -75,4 +67,33 @@ main {
     .media > img {
         object-fit: unset;
     }
+
+    // .color-scheme-1{
+
+    //     .collection{
+    //         slider-component.slider-mobile-gutter{
+    //             .product-card-wrapper {
+    //                 width: 235px;
+    //                 padding: 0 3px;
+    //                 display: block;
+    //                 float: left;
+            
+    //                 .card__inner {
+    //                     max-width: unset;
+    //                     margin: auto;
+    //                     position: relative;
+            
+    //                     img {
+    //                         width: 100%;
+    //                         height: auto;
+    //                         display: block;
+    //                         position: absolute;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    
 }

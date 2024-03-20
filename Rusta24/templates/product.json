@@ -44,11 +44,22 @@
           "settings": {
           }
         },
-        "text_dV38xh": {
-          "type": "text",
+        "collapsible_tab_XjPhbj": {
+          "type": "collapsible_tab",
           "settings": {
-            "text": "<a href=\"https:\/\/www.rusta.com\/se\/sv\/glasracke-p621011620601.aspx#specTab\">Specifikationer<\/a>",
-            "text_style": "body"
+            "heading": "Description",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_89CqAf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifikationer",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
           }
         }
       },
@@ -60,7 +71,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "text_dV38xh"
+        "collapsible_tab_XjPhbj",
+        "collapsible_tab_89CqAf"
       ],
       "settings": {
         "enable_sticky_info": true,
