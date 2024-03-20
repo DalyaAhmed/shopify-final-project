@@ -375,7 +375,7 @@
 
 
 
-
+{% comment %}
 <div class="navigation">
   <ul>
     {% for link in linklists.icons-menu.links %}
@@ -383,12 +383,33 @@
     {% endfor %}
   </ul>
 </div>
+{% endcomment %}
+
+<div class="col-sm-2-5 col-xs-2-7 links main-right">
+    <span>
+        <a href="/se/sv/favoriter/">
+            <i class="fas fa-heart"></i>
+            <div id="bubbleCount-wishlist" class="js-wishlist-count bubble-count">1</div>
+            <span class="hidden-mobile">Favoriter</span>
+        </a>
+        <a href="javascript:void(0)" class="js-popup-loginbutton login-button hidden-mobile" title="Club Rusta">
+            <i class="fas fa-user"></i>
+            <span class="hidden-mobile">Club Rusta</span>
+        </a>
+        <a href="https://rusta24.myshopify.com/cart">
+            <i class="fas fa-shopping-cart"></i>
+            <div id="bubbleCount-checkout" class="js-checkout-count bubble-count">1</div>
+            <span class="hidden-mobile">Kassa</span>
+        </a>
+    </span>
+</div>
 
 
 
 
-
-
+{% style %}
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+{% endstyle %}
 
 
 
@@ -746,13 +767,20 @@
 {% endschema %}
 
 
-<div class="navigation">
-  <ul>
-    {% for link in linklists.main-menu.links %}
-      <li>{{ link.title | link_to: link.url }}</li>
-    {% endfor %}
-  </ul>
-</div>
+
+
+
+
+{% unless page_type == 'cart' %}
+  <div class="navigation">
+    <ul>
+      {% for link in linklists.main-menu.links %}
+        <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endunless %}
+
 
 
 
