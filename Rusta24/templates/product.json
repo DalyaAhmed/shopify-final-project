@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -23,7 +16,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_shape": "circle"
           }
         },
@@ -32,52 +25,32 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "inventory_JMQ8dz": {
+          "type": "inventory",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "description": {
           "type": "description",
           "settings": {
           }
-        },
-        "collapsible_tab_XjPhbj": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Description",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible_tab_89CqAf": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Specifikationer",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible_tab_XjPhbj",
-        "collapsible_tab_89CqAf"
+        "inventory_JMQ8dz",
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",

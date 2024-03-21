@@ -10,6 +10,9 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
+
+
+
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -76,6 +79,18 @@
             endif
           -%}
          
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Intercept form submission for checkout
+    document.getElementById('CartDrawer-Form').addEventListener('submit', function(event) {
+      // Prevent default form submission
+      event.preventDefault();
+      
+      // Redirect to the cart page
+      window.location.href = '/cart';
+    });
+  });
+</script>
 
 
 
@@ -89,7 +104,7 @@
 
 
 
-
+{% comment %}
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -108,7 +123,7 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-
+{% endcomment %}
 
 
 
