@@ -2,8 +2,37 @@ main {
     #MainContent {
         background-color: #f2f2f2;
     }
+
+    .shopify-section {
+        margin: 0 auto;
+        width: calc(100% - 150px);
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        .banner__media {
+            height: 527px;
+        }
+    }
+
     .gradient{
-      
+      .collection{
+        li{
+            // height: 40%;
+
+            .card__badge{
+                margin-top: 109px;
+            }
+
+            .card__media{
+                img{
+                    width: 40%;
+                    // margin-left: 60px;
+                    margin-top: 30px;
+                
+                }
+            }
+        }
+      }
             .collection-list-wrapper{
         
                 .card__inner{
@@ -16,8 +45,30 @@ main {
                                 display: none;
                             }
             }
+
+            .collection {
+                .product-card-wrapper {
+                    width: 235px;
+                    padding: 0 3px;
+                    display: block;
+                    float: left;
+            
+                    .card__inner {
+                        max-width: 100%;
+                        margin: auto;
+                        position: relative;
+            
+                        img {
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
          }
-        
+       
     .banner {
         width: 100%;
         .page-width {
@@ -35,17 +86,7 @@ main {
         }
     }
 
-    .shopify-section {
-        margin: 0 auto;
-        width: calc(100% - 150px);
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.8);
-
-        .banner__media {
-            height: 527px;
-        }
-    }
-
+    
     .product-card-wrapper {
         width: 235px;
         padding: 0 3px;
@@ -68,32 +109,8 @@ main {
         object-fit: unset;
     }
 
-    // .color-scheme-1{
-
-    //     .collection{
-    //         slider-component.slider-mobile-gutter{
-    //             .product-card-wrapper {
-    //                 width: 235px;
-    //                 padding: 0 3px;
-    //                 display: block;
-    //                 float: left;
-            
-    //                 .card__inner {
-    //                     max-width: unset;
-    //                     margin: auto;
-    //                     position: relative;
-            
-    //                     img {
-    //                         width: 100%;
-    //                         height: auto;
-    //                         display: block;
-    //                         position: absolute;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
+    .collection-list__item{
+        padding-bottom: 15px;
+    }
     
 }
