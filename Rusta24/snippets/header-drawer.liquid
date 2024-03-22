@@ -42,12 +42,12 @@
                       >
                         <div class="menu-drawer__inner-submenu">
 
-                        {% comment%}
+                       
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                             {% render 'icon-arrow' %}
                             {{ link.title | escape }}
                           </button>
-                        {% endcomment%}
+                     
 
 
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
@@ -150,7 +150,7 @@
               <div class="menu-drawer__localization header-localization">
                 {%- if localization.available_countries and localization.available_countries.size > 1 -%}
 
-                {% comment %}
+                
                   <noscript>
                     {%- form 'localization', id: 'HeaderCountryMobileFormNoScriptDrawer', class: 'localization-form' -%}
                       <div class="localization-form__select">
@@ -179,7 +179,7 @@
                       <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
                     {%- endform -%}
                   </noscript>
-                   {% endcomment %}
+                   
 
                   <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
