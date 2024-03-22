@@ -25,6 +25,13 @@
           "settings": {
           }
         },
+        "buy_buttons_QdDJaV": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
         "inventory_JMQ8dz": {
           "type": "inventory",
           "settings": {
@@ -44,6 +51,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "buy_buttons_QdDJaV",
         "inventory_JMQ8dz",
         "description"
       ],
