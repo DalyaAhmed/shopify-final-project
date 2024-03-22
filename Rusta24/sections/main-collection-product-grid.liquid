@@ -328,6 +328,7 @@
           <div class="title-wrapper center">
             <h2 class="title title--primary">
               {{ 'sections.collection_template.empty' | t -}}
+
               <br>
               {{
                 'sections.collection_template.use_fewer_filters_html'
@@ -361,13 +362,6 @@
                   show_quick_add: section.settings.enable_quick_add,
                   section_id: section.id
                 %}
-                <img
-                  class="lazyload"
-                  data-src="{{ product.featured_image | img_url: 'medium' }}"
-                  alt="{{ product.title }}"
-                  width="300"
-                  height="300"
-                >
               </li>
             {% endfor %}
           </ul>
@@ -380,24 +374,3 @@
     {%- endif -%}
   </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const lazyloadImages = document.querySelectorAll('.lazyload');
-
-    function lazyload() {
-      lazyloadImages.forEach(function(img) {
-        if (img.offsetTop < window.innerHeight + window.pageYOffset) {
-          img.src = img.dataset.src;
-          img.onload = function() {
-            img.classList.remove('lazyload');
-          };
-        }
-      });
-    }
-
-    lazyload();
-
-    window.addEventListener('scroll', lazyload);
-  });
-</script>
