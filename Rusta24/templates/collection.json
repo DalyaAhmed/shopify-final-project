@@ -8,6 +8,44 @@
         "color_scheme": "scheme-1"
       }
     },
+    "image_with_text_bgqgY6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WGPwc9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Hem & inredning<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Qy8hGt": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>Förnya inredningen<\/strong><\/h4><p>Uppdatera inredningen enkelt med hjälp av mjuka textilier, dekorationer och belysning. Vi tycker att det ska vara lätt att inreda efter säsong,därför ser vi till att förnya vårtsortiment så ofta vi kan med nya favoriter. Hos oss hittar du ett brett utbud av kuddar, plädar, gardiner, mattor, konstväxter och lampor. Vi har även funktionella småmöbler som brickbord, sittpuffar, pallar och bänkar i olika stilar.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WGPwc9",
+        "text_Qy8hGt"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hom.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -31,6 +69,7 @@
   },
   "order": [
     "banner",
+    "image_with_text_bgqgY6",
     "product-grid"
   ]
 }
