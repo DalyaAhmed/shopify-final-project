@@ -249,7 +249,9 @@
 
 
 
+
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript class="small-hide medium-hide">
@@ -307,6 +309,9 @@
           </localization-form>
         {%- endif -%}
       </div>
+
+
+
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -332,7 +337,7 @@
       {%- endfor -%}
 
 
-     {% comment %}
+ {% comment%}   
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -351,8 +356,8 @@
           </div>
         {%- endif -%}
       </a>
-    {% endcomment %}
-
+   
+{% endcomment%}
     </div>
 
 
@@ -394,27 +399,6 @@
 
 
 
-<div class="col-sm-2-5 col-xs-2-7 links main-right">
-    <span>
-        <a href="/se/sv/favoriter/">
-            <i class="fas fa-heart"></i>
-            <div id="bubbleCount-wishlist" class="js-wishlist-count bubble-count">1</div>
-            <span class="hidden-mobile">Favoriter</span>
-        </a>
-        <a href="javascript:void(0)" class="js-popup-loginbutton login-button hidden-mobile" title="Club Rusta">
-            <i class="fas fa-user"></i>
-            <span class="hidden-mobile">Club Rusta</span>
-        </a>
-        <a href="https://rusta24.myshopify.com/cart">
-            <i class="fas fa-shopping-cart"></i>
-            <div id="bubbleCount-checkout" class="js-checkout-count bubble-count">1</div>
-            <span class="hidden-mobile">Kassa</span>
-        </a>
-    </span>
-</div>
-
-
-
 
 
 
@@ -422,6 +406,64 @@
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 {% endstyle %}
 
+
+
+
+<div class="col-sm-2-5 col-xs-2-7 links main-right">
+    <span>
+        <a href="/se/sv/favoriter/">
+            <i class="fas fa-heart"></i>
+          {% comment%}  <div id="bubbleCount-wishlist" class="js-wishlist-count bubble-count">1</div>{% endcomment%} 
+            <span class="hidden-mobile">Favoriter</span>
+        </a>
+        <a href="javascript:void(0)" class="js-popup-loginbutton login-button hidden-mobile" title="Club Rusta">
+            <i class="fas fa-user"></i>
+            <span class="hidden-mobile">Club Rusta</span>
+        </a>
+
+        
+{%comment%}
+        <a href="https://rusta24.myshopify.com/cart">
+            <i class="fas fa-shopping-cart"></i>
+            <div id="bubbleCount-checkout" class="js-checkout-count bubble-count">1</div>
+            <span class="hidden-mobile">Kassa</span>
+        </a>
+{% endcomment%}
+
+
+
+         <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+
+
+         {% comment %}
+         <i class="fas fa-shopping-cart"></i>
+          {% endcomment %}
+
+
+        {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render <i class="fas fa-shopping-cart"></i>
+          endif
+        -%}
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+        <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+         
+        {%- endif -%}
+      </a>
+
+
+
+
+    </span>
+</div>
 
 
 
@@ -441,7 +483,7 @@
     connectedCallback() {
       this.header = document.querySelector('.section-header');
       this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
-      this.headerBounds = {};
+      this.headerBounds = %%;
 
       this.setHeaderHeight();
 

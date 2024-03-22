@@ -25,6 +25,10 @@ sticky-header {
 
   .header{
     padding-top: 84px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px;
 
     .fa-search{
       margin-left: -367px;
@@ -35,9 +39,9 @@ sticky-header {
 
     .header__heading-logo {
       width: 181px;
-      margin: 0 auto;
       height: 81px;
       max-width: unset;
+      margin-left: 291px;
     }
 
 
@@ -49,10 +53,11 @@ sticky-header {
               border-radius: 40px;
               font-size: solid 15px black;
               padding: 18px;
-              margin-left: -182px;
+              margin-left: -165px;
               margin-top: 8px;
               border: solid 1px;
               padding-left: 46px;
+              margin-right: auto;
             }
             
         }
@@ -80,7 +85,19 @@ sticky-header {
 }
 
 .main-right{
-    margin-left: 205px;
+  margin-left: 654px;
+  
+  #bubbleCount-wishlist{
+    display: none;
+  }
+  .favorite-icon-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .favorite-icon-container i {
+    margin-right: 5px; /* Adjust margin between icon and count */
+  }
     span{
         display: flex;
         width: 100%;
@@ -88,10 +105,20 @@ sticky-header {
         a{
           text-decoration: none;
           color: #363636 !important;
-          margin-left: 66px;
-          margin-right: -51px;
+          margin-left: -100px;
+         margin-right: 150px;
+         margin-top: -12px;
+         i{
+          margin-bottom: 23px;
+         }
+         
         }
 
+        // a:nth-of-type(1){
+        //   span.hidden-mobile{
+        //     padding-top: 25px;
+        //   }
+        // }
         a:nth-of-type(2) {
             margin-top: 23px;
             i{
@@ -99,10 +126,19 @@ sticky-header {
               top: 30%;
               transform: translateY(-50%);
               margin-left: 29px;
+              margin-bottom: 23px;
+              
             }
           }
-    }
 
+          .fa-shopping-cart {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: -13px;
+            margin-bottom: -28px;
+    }
+  }
     #bubbleCount-checkout,#bubbleCount-wishlist {
       background-color: white;
       border-radius: 50%; /* This creates the circle */
@@ -112,6 +148,13 @@ sticky-header {
       text-align: center; /* This centers the number horizontally */
       color: black; /* Adjust the color of the number */
       margin-left: 27px;
+    }
+
+
+    a:first-child{
+     span.hidden-mobile{
+      padding-top: 25px;
+     }
     }
 
   }
@@ -130,7 +173,90 @@ sticky-header {
     transform: translateY(-50%);
     margin-left: 13px;
   }
-}
+
+  span{
+    display: flex;
+  width: 126%;
+  margin-top: -14px;
+
+  a{
+    text-decoration: none;
+  color: #363636 !important;
+  margin-left: -97px;
+  margin-right: 110px;
+  margin-top: -2px;
+
+
+  }
+
+  a#cart-icon-bubble{
+
+    i.fa-shopping-cart{
+      .hidden-mobile{
+        display: flex;
+        width: 126%;
+        font-size: 15px;
+        margin-top: 17px;
+        margin-left: 0;
+        margin-right: 30px;
+      }
+    }
+   
+  .icon{
+    height: 4.4rem;
+  width: 4.4rem;
+  padding: 0;
+  margin-top: 64px;
+  margin-left: -23px;
+  }
+
+  .cart-count-bubble{
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: -14.1rem;
+    bottom: .8rem;
+    left: 1.2rem;
+    line-height: calc(1 + .1 / var(--font-body-scale));
+    margin-bottom: -26px;
+    background-color: white;
+    color: black;
+    padding-top: 11px;
+
+
+//     span:first-child {
+//       margin-left: 50px;
+//       padding-top: 4px;
+// }
+    }
+
+    span:not(:first-child) {
+      margin-left: 5px; // Add some space between spans
+    }
+    // Hide the visually hidden span
+    span.visually-hidden {
+      display: none;
+    }
+    
+    .hidden-mobile{
+      display: flex;
+      width: 126%;
+      font-size: 15px;
+      margin-top: 22px;
+      margin-left: 0;
+      margin-right: 30px;
+    }
+  }
+  }
+  }
+
 
 
 
