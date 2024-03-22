@@ -30,6 +30,9 @@
         "heading_WGPwc9",
         "text_Qy8hGt"
       ],
+      "custom_css": [
+        "h2[data-shopify-editor-block*=\"heading_WGPwc9\"] {margin-top: 30px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hom.webp",
         "height": "adapt",
@@ -49,7 +52,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 12,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
@@ -59,7 +62,7 @@
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
