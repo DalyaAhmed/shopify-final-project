@@ -1,5 +1,52 @@
 {
   "sections": {
+    "image_banner_ea6Uqj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_MCdTNa": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Kassa<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_HRcH6x": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Missa inga erbjudanden<\/strong>Logga in för att ta del av våra bästa erbjudanden. Är du inte medlem kan du enkelt registrera dig.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_Q9dDMm": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Logga In \/ Bli Medlem",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MCdTNa",
+        "text_HRcH6x",
+        "buttons_Q9dDMm"
+      ],
+      "settings": {
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -34,6 +81,7 @@
     }
   },
   "order": [
+    "image_banner_ea6Uqj",
     "cart-items",
     "cart-footer"
   ]
