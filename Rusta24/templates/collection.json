@@ -8,6 +8,7 @@
         "color_scheme": "scheme-1"
       }
     },
+<<<<<<< HEAD
     "image_with_text_bgqgY6": {
       "type": "image-with-text",
       "blocks": {
@@ -49,6 +50,8 @@
         "padding_bottom": 0
       }
     },
+=======
+>>>>>>> parent of 3b4f916 (hem inredning tilbaks)
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -72,7 +75,6 @@
   },
   "order": [
     "banner",
-    "image_with_text_bgqgY6",
     "product-grid"
   ]
 }
