@@ -1,5 +1,49 @@
 
-.product__info-wrapper{
+.page-width{
+    .product-form__buttons {
+        max-width: 29rem;
+        margin-left: 147px;
+        margin-top: -73px;
+      }
+    .product{
+        .product__info-wrapper{
+            product-info{
+                .product-form{
+                    form{
+                        .product-form__buttons{
+                            margin-left: 147px;
+                            margin-top: -75px;
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            li{
+                .product-media-container {
+                    width: 40%;  
+                    &:first-child {
+                      width: auto;
+                    }
+                  }
+            }
+        }
+        
+        .product__description{
+            margin-bottom: -262px;
+            margin-left: -730px;
+        }
+
+       
+    }
+
+    .grid__item.product__media-wrapper{
+        padding-bottom: 113px;
+    }
+      
+}
+
+
     h1{
         font-size: 42px;
         font-weight: 800;
@@ -43,21 +87,26 @@
 
     variant-selects.no-js-hidden{
         margin-top: 70px;
-
+        .product-form__input{
+            .form__label{
+                padding: 14px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            // label.form__label {
+            //     // display: none;
+            // }
+            display: inline-block;
+            width: 100%;
+            color: #000;position: relative;
+            display: inline-block;
+            width: 100%;
+            color: #000;
+            position: relative;
+        } 
         .product-form__input:first-child{
             border-top: 1px solid #f2f2f2;
-            .product-form__input{
-                label.form__label {
-                    display: none;
-                }
-                display: inline-block;
-                width: 100%;
-                color: #000;position: relative;
-                display: inline-block;
-                width: 100%;
-                color: #000;
-                position: relative;
-            } 
+           
             
     
         }
@@ -107,34 +156,9 @@
     }
 
     .product-form__submit{
-        margin-left: 37%;
-        margin-top: 30px;
+        margin-left: -11%;
+        margin-top: 1px;
+        width: 327px;
     }
     
-}
 
-.page-width{
-   
-    .product{
-        ul {
-            li{
-                .product-media-container {
-                    width: 40%;  
-                    &:first-child {
-                      width: auto;
-                    }
-                  }
-            }
-        }
-        
-        .product__description{
-            margin-bottom: -262px;
-            margin-left: -730px;
-        }
-    }
-
-    .grid__item.product__media-wrapper{
-        padding-bottom: 113px;
-    }
-      
-}
