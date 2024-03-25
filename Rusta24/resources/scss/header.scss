@@ -137,6 +137,7 @@ span{
         transform: translateY(-50%);
         margin-left: -13px;
         margin-bottom: -28px;
+        margin-top:5%;
 }
 }
 #bubbleCount-checkout,#bubbleCount-wishlist {
@@ -223,7 +224,7 @@ justify-content: center;
 align-items: center;
 font-size: -14.1rem;
 bottom: .8rem;
-left: 1.2rem;
+left: 2.5rem;
 line-height: calc(1 + .1 / var(--font-body-scale));
 margin-bottom: -26px;
 background-color: white;
@@ -257,7 +258,14 @@ span.visually-hidden {
 }
 }
 
-
+.links.main-right span a#cart-icon-bubble .hidden-mobile {
+  display: flex;
+  width: 126%;
+  font-size: 15px;
+  margin-top: 95px;
+  margin-left: 0;
+  margin-right: 0px;
+}
 
 
 
