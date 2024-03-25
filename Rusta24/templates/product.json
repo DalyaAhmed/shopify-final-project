@@ -48,7 +48,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Description",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "",
             "page": ""
           }
@@ -57,7 +57,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Specifikationer",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "",
             "page": ""
           }
