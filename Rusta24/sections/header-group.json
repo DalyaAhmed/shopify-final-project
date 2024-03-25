@@ -5,7 +5,7 @@
     "custom_liquid_Fa4jEL": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/varuhus\/\">Varuhus & öppettider<\/a>\n<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/kundservice\/\">Kundservice<\/a>",
+        "custom_liquid": "<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/varuhus\/\">Varuhus & öppettider<\/a>\n<a href=\"https:\/\/www.rusta.com\/se\/sv\/information\/kundservice\/\">Kundservice<\/a>\n<a href=\"https:\/\/www.rusta.com\/se\/sv\/hallbarhet--kvalitet\/\">Hållbarhet & kvalitet<\/a>",
         "color_scheme": "",
         "padding_top": 8,
         "padding_bottom": 8
