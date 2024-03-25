@@ -108,12 +108,6 @@
 
           <div class= "product-type"> {{product.type}}</div>
 
-               
-
-
-
-                
-
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -129,9 +123,6 @@
                   </div>
                 {%- endif -%}
 
-
-                
-
                 {% comment %}
                 <div class="product__tax caption rte">
                   {%- if cart.taxes_included -%}
@@ -142,8 +133,6 @@
                   {%- endif -%}
                 </div>
                 {% endcomment %}
-
-
 
                 <div {{ block.shopify_attributes }}>
                   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
@@ -209,7 +198,7 @@
                 </p>
 
 
-                {% comment %}
+      {% comment %}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                 
@@ -231,15 +220,7 @@
                 </p>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
-
-
      {% endcomment%}
-
-
-
-
-
-
 
              
               {%- when 'quantity_selector' -%}
@@ -269,11 +250,6 @@
                     </span>
                   </label>
                   {% endcomment %}
-
-
-
-
-
 
 
                   <div class="price-per-item__container">
@@ -309,12 +285,6 @@
                         {% render 'icon-plus' %}
                       </button>
                     </quantity-input>
-
-
-
-
-
-
 
                     {%- liquid
                       assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
@@ -473,14 +443,6 @@
                   {%- endif -%}
                 </div>
 
-
-
-
-
-
-
-
-
                  {%- when 'collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -503,20 +465,6 @@
 
                   </details>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
               {%- when 'popup' -%}
@@ -589,16 +537,6 @@
                     </p>
                   </div>
                 {%- endif -%}
-
-
-
-
-
-
-
-
-
-
 
               {%- when 'complementary' -%}
                 <product-recommendations
@@ -736,9 +674,6 @@
                   {%- endif -%}
                 </product-recommendations>
 
-
-
-
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
             {%- endcase -%}
@@ -749,9 +684,7 @@
           </a>
         </product-info>
       </div>
-
-
-
+      
       {%- if section.settings.media_position == 'right' -%}
         {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
         <div class="grid__item product__media-wrapper small-hide">

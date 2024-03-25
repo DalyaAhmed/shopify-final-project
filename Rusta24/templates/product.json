@@ -37,6 +37,13 @@
           "settings": {
           }
         },
+        "buy_buttons_qqGUz4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
         "collapsible_tab_XjPhbj": {
           "type": "collapsible_tab",
           "settings": {
@@ -63,11 +70,12 @@
         "variant_picker",
         "quantity_selector",
         "description",
+        "buy_buttons_qqGUz4",
         "collapsible_tab_XjPhbj",
         "collapsible_tab_89CqAf"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-2",
         "media_size": "small",
         "constrain_to_viewport": true,
