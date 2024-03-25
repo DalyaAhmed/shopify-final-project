@@ -96,18 +96,6 @@ main {
                 left: 0;
                 width: 100%;
                 text-align: center;
-
-                .price {
-                    font-size: 24px;
-                    color: #000;
-                    font-family: "Rusta Price Typo", Arial, Helvetica, Sans-Serif;
-                    letter-spacing: -0.05em;
-                    position: relative;
-
-                    .cents {
-                        bottom: 16px;
-                    }
-                }
             }
         }
     }
