@@ -1,43 +1,35 @@
+
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
+        "show_collection_image": true,
         "color_scheme": "scheme-1"
       }
     },
-    "image_with_text_bgqgY6": {
+    "image_with_text_KBF9tH": {
       "type": "image-with-text",
       "blocks": {
-        "heading_WGPwc9": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Hem & inredning<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_Qy8hGt": {
+        "text_DHA8hX": {
           "type": "text",
           "settings": {
-            "text": "<h4><strong>Förnya inredningen<\/strong><\/h4><p>Uppdatera inredningen enkelt med hjälp av mjuka textilier, dekorationer och belysning. Vi tycker att det ska vara lätt att inreda efter säsong,därför ser vi till att förnya vårtsortiment så ofta vi kan med nya favoriter. Hos oss hittar du ett brett utbud av kuddar, plädar, gardiner, mattor, konstväxter och lampor. Vi har även funktionella småmöbler som brickbord, sittpuffar, pallar och bänkar i olika stilar.<\/p>",
+            "text": "<h1><strong>Hem & inredning<\/strong><\/h1><h4><strong>Förnya inredningen<\/strong><\/h4><p>Uppdatera inredningen enkelt med hjälp av mjuka textilier, <br\/>dekorationer och belysning. Vi tycker att det ska vara lätt att inreda <br\/>efter säsong, därför ser vi till att förnya vårt sortiment så ofta vi <br\/>kan med nya favoriter. Hos oss hittar du ett brett utbud av kuddar, <br\/>plädar, gardiner, mattor, konstväxter och lampor. Vi har även <br\/>funktionella småmöbler som brickbord, sittpuffar, pallar och bänkar i <br\/>olika stilar.<\/p>",
+           
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_WGPwc9",
-        "text_Qy8hGt"
-      ],
-      "custom_css": [
-        "h2[data-shopify-editor-block*=\"heading_WGPwc9\"] {margin-top: 30px;}"
+        "text_DHA8hX"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hom.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -45,24 +37,24 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 32,
+        "padding_bottom": 36
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 12,
+        "products_per_page": 16,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "drawer",
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
@@ -72,7 +64,7 @@
   },
   "order": [
     "banner",
-    "image_with_text_bgqgY6",
+    "image_with_text_KBF9tH",
     "product-grid"
   ]
 }
