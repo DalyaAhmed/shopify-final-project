@@ -91,20 +91,20 @@
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
-    <div class="navigation">
-      <ul>
-        {% assign hem_menu = linklists['hem-inredning'].links %}
-        {% if hem_menu.size > 0 %}
-          {% for link in hem_menu %}
-            <li>{{ link.title | link_to: link.url }}</li>
-          {% endfor %}
-        {% else %}
-          <li>No links found in the "Hem inredning" link list.</li>
-        {% endif %}
-      </ul>
-    </div>
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet image-with-text__grid--reverse">
+        <div class="navigation">
+          <ul>
+            {% assign hem_menu = linklists['hem-inredning'].links %}
+            {% if hem_menu.size > 0 %}
+              {% for link in hem_menu %}
+                <li>{{ link.title | link_to: link.url }}</li>
+              {% endfor %}
+            {% else %}
+              <li>No links found in the "Hem inredning" link list.</li>
+            {% endif %}
+          </ul>
+        </div>
         <!-- Image Content -->
         <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--top grid__item">
           <div
