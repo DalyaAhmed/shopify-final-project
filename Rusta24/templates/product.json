@@ -3,6 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -16,7 +23,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "swatch_shape": "circle"
           }
         },
@@ -25,46 +32,48 @@
           "settings": {
           }
         },
-        "buy_buttons_QdDJaV": {
+        "buy_buttons_nkPXbA": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
-          }
-        },
-        "inventory_JMQ8dz": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "description": {
           "type": "description",
           "settings": {
           }
+        },
+        "collapsible_tab_89CqAf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifikationer",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
+        "vendor",
         "title",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons_QdDJaV",
-        "inventory_JMQ8dz",
-        "description"
+        "buy_buttons_nkPXbA",
+        "description",
+        "collapsible_tab_89CqAf"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "lightbox",
-        "mobile_thumbnails": "show",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,

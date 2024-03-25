@@ -1,9 +1,10 @@
-
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
+      "custom_css": [
+        ".collection-hero__title {margin-top: 0px; margin-bottom: 0px;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": true,
@@ -16,14 +17,16 @@
         "text_DHA8hX": {
           "type": "text",
           "settings": {
-            "text": "<h1><strong>Hem & inredning<\/strong><\/h1><h4><strong>Förnya inredningen<\/strong><\/h4><p>Uppdatera inredningen enkelt med hjälp av mjuka textilier, <br\/>dekorationer och belysning. Vi tycker att det ska vara lätt att inreda <br\/>efter säsong, därför ser vi till att förnya vårt sortiment så ofta vi <br\/>kan med nya favoriter. Hos oss hittar du ett brett utbud av kuddar, <br\/>plädar, gardiner, mattor, konstväxter och lampor. Vi har även <br\/>funktionella småmöbler som brickbord, sittpuffar, pallar och bänkar i <br\/>olika stilar.<\/p>",
-           
+            "text": "<h1><strong>Hem & inredning<\/strong><\/h1><h4><strong>Förnya inredningen<\/strong><\/h4><p>Uppdatera inredningen enkelt med hjälp av mjuka textilier,dekorationer och belysning. Vi tycker att det ska vara lätt att inreda efter säsong, därför ser vi till att förnya vårt sortiment så ofta vi kan med nya favoriter. Hos oss hittar du ett brett utbud av kuddar, plädar, gardiner, mattor, konstväxter och lampor. Vi har även  funktionella småmöbler som  brickbord, sittpuffar, pallar och bänkar i olika stilar<\/p>",
             "text_style": "body"
           }
         }
       },
       "block_order": [
         "text_DHA8hX"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/hom.webp",
@@ -37,8 +40,8 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 32,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "product-grid": {
@@ -54,11 +57,11 @@
         "show_rating": true,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },

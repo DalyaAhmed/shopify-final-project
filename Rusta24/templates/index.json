@@ -16,22 +16,22 @@
         "show_text_below": false
       }
     },
-    "featured_collection_Xtxn8p": {
+    "featured_collection_KqenmV": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "<strong>Veckans erbjudanden<\/strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "subtitle",
         "collection": "veckans-erbjudanden-1",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -322,7 +322,7 @@
   },
   "order": [
     "image_banner",
-    "featured_collection_Xtxn8p",
+    "featured_collection_KqenmV",
     "collection_list_aBNXLM",
     "collection_list_cDrjAE",
     "collection_list_DnFGdL",

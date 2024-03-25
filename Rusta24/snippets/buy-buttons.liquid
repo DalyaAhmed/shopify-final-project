@@ -1,4 +1,3 @@
-
 {% comment %}
   Renders product buy-buttons.
   Accepts:
@@ -11,9 +10,6 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
-
-
-
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -80,18 +76,6 @@
             endif
           -%}
          
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Intercept form submission for checkout
-    document.getElementById('CartDrawer-Form').addEventListener('submit', function(event) {
-      // Prevent default form submission
-      event.preventDefault();
-      
-      // Redirect to the cart page
-      window.location.href = '/cart';
-    });
-  });
-</script>
 
 
 
@@ -106,7 +90,6 @@
 
 
 {% comment %}
-
           <button
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -126,12 +109,6 @@
             {%- render 'loading-spinner' -%}
           </button>
 {% endcomment %}
-
-
-
-
-
-
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
@@ -143,8 +120,7 @@
       <div class="product-form__buttons form">
 
 
-{% comment%}
-
+      {% comment%}
         <button
           type="submit"
           name="add"
@@ -153,11 +129,8 @@
         >
           {{ 'products.product.sold_out' | t }}
         </button>
-{% endcomment %}
 
-
-
-
+        {% endcomment %}
       </div>
     </div>
   {%- endif -%}
