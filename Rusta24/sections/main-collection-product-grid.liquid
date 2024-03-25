@@ -351,7 +351,10 @@
           >
             {% for product in collection.products %}
               {% assign lazy_load = true %}
-              <li class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              <li
+                class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                data-product-url="{{ product.url }}"
+              >
                 {% render 'card-product',
                   card_product: product,
                   media_aspect_ratio: section.settings.image_ratio,
@@ -377,6 +380,18 @@
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    const productGrid = document.getElementById('product-grid');
+
+    productGrid.addEventListener('click', function(event) {
+      const clickedElement = event.target.closest('.grid__item');
+      if (clickedElement) {
+        const productUrl = clickedElement.dataset.productUrl;
+        if (productUrl) {
+          window.location.href = productUrl;
+        }
+      }
+    });
+
     const productGridContainer = document.getElementById('product-grid-container');
     const lazyloadThreshold = 100; // Distance from bottom of the page to trigger loading more products
 
