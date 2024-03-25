@@ -32,13 +32,6 @@
           "settings": {
           }
         },
-        "buy_buttons_VKweCH": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -69,7 +62,6 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons_VKweCH",
         "description",
         "collapsible_tab_XjPhbj",
         "collapsible_tab_89CqAf"
