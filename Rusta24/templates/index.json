@@ -2,14 +2,26 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "blocks": {
+        "text_9Afpdn": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Fyll på hemma till rena fyndpriser!<\/strong>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_9Afpdn"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/se_11_web_header_desktop.webp",
+        "image": "shopify:\/\/shop_images\/spa-supplies.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
-        "desktop_content_position": "middle-right",
+        "desktop_content_position": "top-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
@@ -170,7 +182,7 @@
         "buttons_XEDVa4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/rusta_miljobild_mattor_ull_elsaform_pall.webp",
+        "image": "shopify:\/\/shop_images\/antique-posters-on-home-wall.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",

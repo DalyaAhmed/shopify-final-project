@@ -13,6 +13,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "logo{}"
+      ],
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
